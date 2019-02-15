@@ -6,6 +6,36 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'EB Garamond';
+  src: url("../assets/fonts/EBGaramon-mediumItalic/EBGaramond-MediumItalic.eot");
+  src: url("../assets/fonts/EBGaramon-mediumItalic/EBGaramond-MediumItalic.eot") format("embedded-opentype"), url("../assets/fonts/EBGaramon-mediumItalic/EBGaramond-MediumItalic.woff2") format("woff2"), url("../assets/fonts/EBGaramon-mediumItalic/EBGaramond-MediumItalic.woff") format("woff"), url("../assets/fonts/EBGaramon-mediumItalic/EBGaramond-MediumItalic.ttf") format("truetype"), url("../assets/fonts/EBGaramon-mediumItalic/EBGaramond-MediumItalic.svg") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Awesome Season Personal Use';
+  src: url("../assets/fonts/AwesomeSeasonRegular/AwesomeSeasonPersonalUse-Regula.eot");
+  src: url("../assets/fonts/AwesomeSeasonRegular/AwesomeSeasonPersonalUse-Regula.eot") format("embedded-opentype"), url("../assets/fonts/AwesomeSeasonRegular/AwesomeSeasonPersonalUse-Regula.woff2") format("woff2"), url("../assets/fonts/AwesomeSeasonRegular/AwesomeSeasonPersonalUse-Regula.woff") format("woff"), url("../assets/fonts/AwesomeSeasonRegular/AwesomeSeasonPersonalUse-Regula.ttf") format("truetype"), url("../assets/fonts/AwesomeSeasonRegular/AwesomeSeasonPersonalUse-Regula.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: "EB Garamond";
+  font-size: 17px;
+}
+
+h2 {
+  font-family: "Libre Baskerville";
+  font-size: 19px;
+}
+
+section {
+  margin-top: 10rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +44,6 @@ body {
 
 .container {
   width: 100%;
-  height: 100%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,13 +75,27 @@ body {
   color: white;
   font-family: "Libre Baskerville";
   text-transform: uppercase;
+  text-align: center;
   z-index: 1;
+  width: 480px;
 }
 
 .banner-text {
-  top: 45%;
+  top: 55%;
   text-transform: none;
   text-align: center;
+  font-family: "EB Garamond";
+  font-size: 19px;
+  padding: 0 10px 0 10px;
+  width: calc(700px - 20px);
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+  display: block;
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .navigation {
@@ -62,11 +105,12 @@ body {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  height: 20px;
 }
 
 .navigation ul {
@@ -84,9 +128,68 @@ body {
 }
 
 .navigation ul li a {
-  color: white;
+  color: #cccccc;
   padding-right: 20px;
   text-decoration: none;
+}
+
+.navigation ul li a:hover {
+  color: white;
+}
+
+.recent-news h1 {
+  text-align: center;
+  margin-bottom: 6rem;
+  font-family: "Awesome Season Personal Use";
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 20rem;
+}
+
+.news:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  background-color: rgba(219, 219, 219, 0.13);
+}
+
+.news-picture {
+  width: 50rem;
+}
+
+.news-picture img {
+  width: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.news-info {
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.news-info ul {
+  list-style: none;
+  padding: 5px 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
