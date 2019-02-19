@@ -201,7 +201,7 @@ sup {
 }
 
 a {
-    color: #ffc107;
+    color: rgb(212, 169, 117);
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects
@@ -2354,14 +2354,14 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #111;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: rgb(212, 169, 117);
+    border-color: rgb(212, 169, 117);
 }
 
 .btn-primary:hover {
     color: #111;
-    background-color: #e0a800;
-    border-color: #d39e00
+    background-color:rgba(199, 168, 129, 0.938);
+    border-color: rgba(199, 168, 129, 0.938);
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -4800,7 +4800,9 @@ tbody.collapse.show {
 .media-body {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .list-group {

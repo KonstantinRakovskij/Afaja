@@ -904,4 +904,15 @@ body {
    opacity: 0;
    visibility: hidden;
  }
+ //Customizing bootstrap NAV-BAR settings
+ .navbar-dark .navbar-nav .nav-link {
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+//Customizing bootstrap Ivikiai setings
+img.img-fluid {
+  height: 410px;
+  object-fit: contain;
+}
  
