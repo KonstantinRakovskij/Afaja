@@ -2,14 +2,17 @@
   font-family: 'Oswald-Regular';
   src: url("../assets/fonts/Oswald/Oswald-Regular.eot");
   src: url("../assets/fonts/Oswald/Oswald-Regular.eot") format("embedded-opentype"), url("../assets/fonts/Oswald/Oswald-Regular.svg") format("svg"), url("../assets/fonts/Oswald/Oswald-Regular.ttf") format("truetype"), url("../assets/fonts/Oswald/Oswald-Regular.woff") format("woff"), url("../assets/fonts/Oswald/Oswald-Regular.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal;
+}
+
+p {
+  font-family: 'Oswald-Regular';
+  font-weight: 100;
 }
 
 body {
   background: #fff;
-  font-family: 'Oswald-Regular';
-  font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
   color: #111212;
@@ -915,9 +918,11 @@ img.img-fluid {
   -o-object-fit: contain;
   object-fit: contain;
 }
-.media-body {
-    padding-left: 15px;
-    padding-right: 15px;
+
+#ivikiai img {
+  height: 540px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
