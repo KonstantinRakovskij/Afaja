@@ -913,16 +913,26 @@ header .navbar .cta-btn a:hover {
   font-size: 15px;
 }
 
-img.img-fluid {
-  height: 410px;
-  -o-object-fit: contain;
-  object-fit: contain;
+.aboutus .media h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-#ivikiai img {
-  height: 540px;
-  -o-object-fit: cover;
-  object-fit: cover;
+.aboutus .media .post-meta {
+  font-size: 14px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.aboutus .media > a {
+  width: 40%;
+}
+
+@media (max-width: 767px) {
+  .aboutus .media > a {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
