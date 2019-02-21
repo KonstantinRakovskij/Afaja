@@ -935,4 +935,20 @@ header .navbar .cta-btn a:hover {
   }
 }
 
+#sunu-puslapio-lenteles {
+  width: 600px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #misel {
+    width: 330px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #misel {
+    width: 450px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
