@@ -1,128 +1,122 @@
-!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="lt">
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Šuniukai</title>
+    <title>Pagrindinis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-
-    <div class="container">
-      <div class="banner-title">
-        <h2>Šuniukai</h2>
-      </div>
-      <div class="banner-text">
-        <p>Kiekvienas iš mūsų šūnų yra mylimas ir turi savo unikalų charakterį. Mes praleidžiam daug laiko kartu auklėjant juos tam, kad jie būtų ne tik protingi, bet ir laimingi. Kiekvienas iš jų yra šeimos narys.
-        </p>
-      </div>
-
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-
-          <div class="item active">
-            <img src="assets/image/banner-top.jpg" alt="">
-
+    <!-- Header Section START -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand absolute" href="index.html"><img id="header-logo" src="assets/img/header400w.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav mx-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Pagrindinis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">Apie mus</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="dogs.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MŪSŲ ŠUNYS</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="#">Auksaspalvis retriveris</a>
+                  <a class="dropdown-item" href="boni.html">Anglu koker spanielis</a>         
+                       </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Kontaktai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Ivikiai</a>
+              </li>
+            </ul>
           </div>
-
-          <div class="item">
-            <img src="assets/image/banner-top2.jpg" alt="">
-          </div>
-
+        </div>
+      </nav>
+    </header>
+    <!-- Header Section END -->
+    <!-- Header Title START-->
+    <div id="title" class="container">
+      <div class="row slider-text align-items-center justify-content-center">
+        <div class="col-md-8 text-center col-sm-12 element-animate">
+          <h1>Apie Mus</h1>
+          <p class="mb-5">Mes esame labai malonus, labai judrus ir labai aktyvus. Mūsų labai daug ir su kiekvienais metais mūsų vis daugėja.</p>
         </div>
       </div>
-      <!-- Overlay -->
-      <div class="container-color-overlay"></div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="sr-only">Next</span>
-      </a>
-
     </div>
-
-    <div class="navigation">
-      <ul>
-        <li>
-          <a href="index.html">PAGRINDINIS</a>
-        </li>
-        <li>
-          <a href="aboutus.html">APIE MUS</a>
-        </li>
-        <li>
-          <a href="dogs.html">MŪSŲ ŠUNYS</a>
-        </li>
-        <li>
-          <a href="pupies.html">ŠUNIUKAI</a>
-        </li>
-        <li>
-          <a href="contactus.html">KONTAKTAI</a>
-        </li>
-      </ul>
+    <!-- Header Title END -->
+    <!-- Header Slieder STAR-->
+    <div class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image: url(assets/img/banner-top.jpg);"></div>
+      <div class="slider-item" style="background-image: url(assets/img/banner-top2.jpg);"></div>
     </div>
-
-  </body>
-
-  <footer class="site-footer">
-    <div class="container">
-        <div class="col-md-13 mb-2">
-          <h3>Kontaktai</h3>
-          <ul class="list-unstyled footer-link">
-            <li class="d-inline-block">
-              <span class="d-inline-block">Adresas:</span>
-              <span class="text-white">Klaipėda, Lietuva
-              </span>
-            </li>
-            <li class="d-inline-block">
-              <span class="d-inline-block">
-                Mob. tel. nr.</span><span class="text-white"> +37067342165 </span></li>
-            <li class="d-inline-block">
-              <span class="d-inline-block">Email:</span>
-              <span class="text-white">
-                <a href="mailto:rakovskajasvetlana@gmail.com">rakovskajasvetlana@gmail.com</a></span></li>
-                  <li>
-                    <a href="https://www.facebook.com/kennelafaja.svetlanarakovskaja" target="_blank" class="p-2">
-                      <span class="fa fa-facebook"></span></a>
+    <!-- Header Slieder END -->
+    
+    <!-- Footer Section START -->
+        <footer class="site-footer">
+          <div class="container">
+              <div class="col-md-13 mb-2">
+                <h3>Kontaktai</h3>
+                <ul class="list-unstyled footer-link">
+                  <li class="d-inline-block">
+                    <span class="d-inline-block">Adresas:</span>
+                    <span class="text-white">Klaipėda, Lietuva
+                    </span>
                   </li>
-                
-
-          </ul>
-        </div>
-       
-        <div class="row">
-          <div class="col-12 text-md-center text-left">
-            <p>Copyright &copy; 2019 made by Konstantin Rakovskij |
-              <a href="mailto:konstantinrakovskij@gmail.com">konstantinrakovskij@gmail.com</a>
-            </p>
+                  <li class="d-inline-block">
+                    <span class="d-inline-block">
+                      Mob. tel. nr.</span><span class="text-white"> +37067342165 </span></li>
+                  <li class="d-inline-block">
+                    <span class="d-inline-block">Email:</span>
+                    <span class="text-white">
+                      <a href="mailto:rakovskajasvetlana@gmail.com">rakovskajasvetlana@gmail.com</a></span></li>
+                        <li>
+                          <a href="https://www.facebook.com/kennelafaja.svetlanarakovskaja" target="_blank" class="p-2">
+                            <span class="fa fa-facebook"></span></a>
+                        </li>
+                      
+    
+                </ul>
+              </div>
+             
+              <div class="row">
+                <div class="col-12 text-md-center text-left">
+                  <p>Copyright &copy; 2019 made by Konstantin Rakovskij |
+                    <a href="mailto:konstantinrakovskij@gmail.com">konstantinrakovskij@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
-  <script src="assets/scripts/jquery-3.2.1.min.js"></script>
-  <script src="assets/scripts/popper.min.js"></script>
-  <script src="assets/scripts/bootstrap.min.js"></script>
-  <script src="assets/scripts/owl.carousel.min.js"></script>
-  <script src="assets/scripts/jquery.waypoints.min.js"></script>
-  <script src="assets/scripts/main.js"></script>
-
-</body>
-
-</html>
+        </footer>
+    
+        <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+        <script src="assets/scripts/jquery-3.2.1.min.js"></script>
+        <script src="assets/scripts/popper.min.js"></script>
+        <script src="assets/scripts/bootstrap.min.js"></script>
+        <script src="assets/scripts/owl.carousel.min.js"></script>
+        <script src="assets/scripts/jquery.waypoints.min.js"></script>
+        <script src="assets/scripts/main.js"></script>
+    
+      </body>
+    
+    </html>
+    

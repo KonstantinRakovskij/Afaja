@@ -138,3 +138,4 @@
   };
   contentWayPoint();
 })(jQuery);
+

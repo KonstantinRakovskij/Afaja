@@ -37,7 +37,7 @@
                 <a class="nav-link dropdown-toggle" href="dogs.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MŪSŲ ŠUNYS</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
                   <a class="dropdown-item" href="#">Auksaspalvis retriveris</a>
-                  <a class="dropdown-item" href="#">Anglu koker spanielis</a>
+                  <a class="dropdown-item" href="boni.html">Anglu koker spanielis</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -69,16 +69,43 @@
     <!-- Header Slieder END -->
 
     <!-- Contact form start -->
-    <p>
-      Send e-mail
-    </p>
-    <form class="contact-form" action="contactform.php" method="post">
-      <input type="text" name="name" placeholder="Full name">
-      <input type="text" name="mail" placeholder="Your Email">
-      <input type="text" name="subject" placeholder="subject ">
-      <textarea name="message" placeholder="message"></textarea>
-      <button type="submit" name="submit">Send mail</button>
-    </form>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 order-2">
+            <form action="#" method="post">
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="name">Vardas</label>
+                  <input type="text" id="name" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email">El. paštas</label>
+                  <input type="email" id="email" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="message">Komentaras/ klausimas</label>
+                  <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md1 form-group">
+                  <input type="submit" value="Siųsti" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Contact form end -->
 
     <footer class="site-footer">
