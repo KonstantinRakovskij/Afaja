@@ -762,11 +762,13 @@ header .navbar .cta-btn a:hover {
   margin-bottom: 20px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
 }
 
 .site-footer .footer-link li {
   line-height: 1.5;
   margin-bottom: 15px;
+  padding-right: 10px;
 }
 
 .site-footer hr {
@@ -949,6 +951,10 @@ header .navbar .cta-btn a:hover {
   #misel {
     width: 450px;
   }
+}
+
+.list-unstyled {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
