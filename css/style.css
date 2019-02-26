@@ -1016,6 +1016,10 @@ a.link-thumbnail img {
   height: 300px;
 }
 
+#sunu-lenteles-img {
+  width: 50%;
+}
+
 @media (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #misel {
     width: 330px;
@@ -1028,6 +1032,12 @@ a.link-thumbnail img {
     top: 36px;
     z-index: -1;
   }
+  #sunu-puslapio-lenteles {
+    width: 300px;
+  }
+  #sunu-lenteles-img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1038,6 +1048,9 @@ a.link-thumbnail img {
     width: 208px;
     top: 32px;
     z-index: -1;
+  }
+  #sunu-puslapio-lenteles {
+    width: 319px;
   }
 }
 
