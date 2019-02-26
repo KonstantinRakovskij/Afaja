@@ -9,6 +9,15 @@
        font-weight: 100;
       font-style: normal;
 }
+@font-face {
+	font-family: 'icomoon';
+	src: url('../assets/fonts/iconmoon/icomoon.eot');
+	src: url('../assets/fonts/iconmoon/icomoon.eot') format('embedded-opentype'), url('../assets/fonts/iconmoon/icomoon.ttf') format('truetype'), url('../assets/fonts/iconmoon/icomoon.woff') format('woff'), url('../assets/fonts/iconmoon/icomoon.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 p{
   font-family: 'Oswald-Regular';
   font-weight: 100;
@@ -938,16 +947,7 @@ body {
 #sunu-puslapio-lenteles{
   width: 600px;
 }
-@media (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  #misel{
-    width: 330px;
-  }
-}
-@media (min-width: 768px) and (max-width:1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  #misel{
-    width: 450px;
-  }
-}
+
 .list-unstyled {
   text-align: center;
 }
@@ -955,5 +955,75 @@ body {
 #ivikiai{
   div{
     margin-top: 50px;
+  }
+}
+/*Return to top button setings START*/
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+  line-height: 1;
+ 
+}
+
+.icon-chevron-up:before {
+	content: "\e900";
+}
+#return-to-top {
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	background: rgba(0, 0, 0, 0.3);
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+	border-radius: 35px;
+	display: none;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#return-to-top i {
+	color: #fff;
+	margin: 0;
+	position: relative;
+	left: 16px;
+	top: 13px;
+	font-size: 19px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+#return-to-top:hover i {
+	color: #fff;
+	top: 5px;
+}
+/*Return to top button setings END*/
+a.link-thumbnail img {
+  object-fit: cover; 
+  height: 300px;
+}
+@media (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #misel{
+    width: 330px;
+  }
+  #return-to-top{
+    display: none!important;
+  }
+ 
+}
+@media (min-width: 768px) and (max-width:1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #misel{
+    width: 450px;
   }
 }
