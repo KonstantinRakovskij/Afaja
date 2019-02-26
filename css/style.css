@@ -1023,11 +1023,21 @@ a.link-thumbnail img {
   #return-to-top {
     display: none !important;
   }
+  #header-logo {
+    width: 135px;
+    top: 36px;
+    z-index: -1;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   #misel {
     width: 450px;
+  }
+  #header-logo {
+    width: 208px;
+    top: 32px;
+    z-index: -1;
   }
 }
 
